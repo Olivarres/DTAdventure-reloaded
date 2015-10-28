@@ -1,11 +1,21 @@
 <!doctype html>
-<html ng-app="app" lang="en">
+<html ng-app="dtadventure" lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Angular App</title>
+  <title>dtadventure</title>
   <base href="/">
 </head>
 <body>
-  Hello, World
+  <header ng-include="'views/header.html'"></header>
+  <div class="jumbotron" style="text-align: center">
+    <h1>DTAdventure<br>
+      <small>You are not prepared!</small>
+    </h1>
+  </div>
+  <div class="container">
+    <ui-view></ui-view>
+  </div>
+
+
 </body>
 </html>

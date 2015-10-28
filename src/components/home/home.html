@@ -1,0 +1,18 @@
+<table class="table">
+  <thead>
+      <tr>
+        <th>
+          Nom
+        </th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="step in ctrl.steps">
+      <td>{{step.id}}</td>
+      <td>{{step.name}}</td>
+      <td><a ng-href="#/edit/{{step.id}}">Edit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- <button class="btn btn-primary" ng-click="ctrl.startGame()">Change</button> -->
