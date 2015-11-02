@@ -10,6 +10,9 @@
     <tr ng-repeat="step in ctrl.steps">
       <td>{{step.id}}</td>
       <td>{{step.name}}</td>
+      <td>
+        <a ui-sref="play/{{step.id}}">Play</a>
+      </td>
       <td><a ng-href="#/edit/{{step.id}}">Edit</a></td>
     </tr>
   </tbody>
