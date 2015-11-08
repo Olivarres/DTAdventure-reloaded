@@ -1,4 +1,16 @@
 {
+  "save": [
+    {
+      "life": 0,
+      "gold": 1100,
+      "start": true,
+      "actions": [
+        "Combattez le dragon"
+      ],
+      "save": 4,
+      "id": 1
+    }
+  ],
   "steps": [
     {
       "id": 1,
@@ -67,8 +79,8 @@
           "type": "fight",
           "name": "Combattez le dragon",
           "params": {
-            "life": "-10",
-            "gold": "1000"
+            "life": -10,
+            "gold": 1000
           }
         },
         {

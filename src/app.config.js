@@ -5,6 +5,5 @@ export default function routing($urlRouterProvider, $locationProvider) {
   //$urlRouterProvider.when('/', '/play');
 
   $urlRouterProvider
-  .when('/play', '/play')
   .otherwise('/');
 }
