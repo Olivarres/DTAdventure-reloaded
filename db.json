@@ -1,16 +1,5 @@
 {
-  "save": [
-    {
-      "life": 0,
-      "gold": 1100,
-      "start": true,
-      "actions": [
-        "Combattez le dragon"
-      ],
-      "save": 4,
-      "id": 1
-    }
-  ],
+  "save": [],
   "steps": [
     {
       "id": 1,

@@ -1,9 +1,9 @@
 <table class="table">
   <thead>
       <tr>
-        <th>
-          Nom
-        </th>
+        <th>Nom</th>
+        <th>Description</th>
+        <th>Actions</th>
       </tr>
   </thead>
   <tbody>
@@ -11,15 +11,16 @@
       <td>{{step.id}}</td>
       <td>{{step.name}}</td>
       <td>
-        <a ng-href="play/{{step.id}}">Play</a>
+        <a ng-href="play/{{step.id}}">Play</a>&nbsp
+        <a ng-href="edit/{{step.id}}">Edit</a>
       </td>
-      <td><a ng-href="edit/{{step.id}}">Edit</a></td>
+
     </tr>
   </tbody>
 </table>
 
 <ul>
-  <li ng-repeat="save in ctrl.saves" track by $index>{{save.id}} {{$index}}
+  <li ng-repeat="save in ctrl.saves" track by $index>{{save.id}}
     <a href="" ng-click="ctrl.deleteSave(save.id, $index)">Supprimer</a>
   </li>
 </ul>

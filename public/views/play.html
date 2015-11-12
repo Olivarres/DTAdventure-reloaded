@@ -1,0 +1,17 @@
+<div ui-view="Stats">
+   
+</div>
+
+<div>
+  <h4>{{play.step.name}}</h4>
+  <p>
+    {{play.step.description}}
+  </p>
+  <ul>
+    <li ng-if="play.user.actions.indexOf(action.name)" ng-repeat="action in play.step.actions track by $index">
+      <a href="" ng-click="play.selectAction(action)">{{action.name}}</a>
+    </li>
+  </ul>
+</div>
+
+<a href="" ng-click="play.saveGame()">Sauvegarder</a>

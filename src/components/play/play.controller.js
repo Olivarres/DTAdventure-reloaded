@@ -5,6 +5,7 @@ export default class PlayController {
     .then(step => this.step=step);
     this.user = UserService;
     this.StepService = StepService;
+    console.log(this.user);
   }
 
   selectAction(action) {
@@ -12,8 +13,11 @@ export default class PlayController {
   }
 
   saveGame() {
+    console.log("wefwefwf");
+    console.log(this.step);
     this.user.save = this.step.id;
     this.StepService.saveGame(this.user);
+
   }
 
 }
